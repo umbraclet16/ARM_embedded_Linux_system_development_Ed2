@@ -3,9 +3,10 @@
 int main()
 {
 	int buf[1024] = {0};
-	int p;
-	FILE *fp = fopen(“./blk_file.dat”, “rb+”);
-	if (NULL=fp)
+	int *p;
+    int i;
+	FILE *fp = fopen("./blk_file.dat", "rb+");
+	if (NULL == fp)
 		return -1;
 	fwrite(buf, sizeof(int), 1024, fp);			// 把1024个数据块写入文件流fp，每个数据块4个字节
 	

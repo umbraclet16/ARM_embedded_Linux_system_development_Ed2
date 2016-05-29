@@ -24,9 +24,9 @@ int main()
 	
 	// 从文件读取三个字符串到缓存
 	for (i=0;i<3;i++) {
-    p = tmp_buf[i];
-    fgets(p, 64, fp);
-    printf("%s", p);				// 打印刚读取出来的字符串到屏幕
+            p = tmp_buf[i];
+            fgets(p, 64, fp);
+            printf("%s", p);				// 打印刚读取出来的字符串到屏幕
 	}
 	
 	fclose(fp);							// 别忘记关闭文件
