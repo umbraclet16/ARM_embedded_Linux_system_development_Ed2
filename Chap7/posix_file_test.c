@@ -15,6 +15,7 @@ int main()
 	int fd;							// 注意，文件描述符是整型值
 	char buf[64] = "this is a posix file!(line1)\n";
 	off_t curr_pos;
+	int file_mode;
 	
 	fd = open("./posix.data", O_CREAT|O_RDWR|O_EXCL, S_IRWXU); 
 //打开一个不存在的文件，并创建文件，权限是用户可读写执行
